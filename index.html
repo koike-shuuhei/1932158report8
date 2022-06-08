@@ -6,7 +6,7 @@
   </head>
 <body>
  <h1>ボーリングのピンを作成</h1>
- ループで１０本のボーリングピンを作りました<br>
+ １０本のボーリングピンを作りました<br>
  <script>
       // ページの読み込みを待つ
       window.addEventListener('DOMContentLoaded', init);
@@ -52,20 +52,108 @@
         const material = new THREE.SpriteMaterial({ map: texture,});
 
         // 森を作成
-        for (let i = 0; i < 10; i++) {
-          const sprite = new THREE.Sprite(material);
-          // ランダムな座標に配置
-          sprite.position.x = 2 * (Math.random() - 0.5);
-          sprite.position.y = 0 * Math.random();
-          sprite.position.z = 2 * (Math.random() - 0.5);
-          // スケールを調整
-          sprite.scale.set(0.5, 0.5, 0.5);
-
-          scene.add(sprite);
-        }
+       
+         const sprite = new THREE.Sprite(material);
+         // ランダムな座標に配置
+         sprite.position.x = 0;
+         sprite.position.y = 0 ;
+         sprite.position.z = 0;
+         // スケールを調整
+         sprite.scale.set(0.5, 1.0, 0.5);
+       　scene.add(sprite);
+       　update();
         
-        update();
-
+         const sprite = new THREE.Sprite(material);
+         // ランダムな座標に配置
+         sprite.position.x = 1
+         sprite.position.y = 0 ;
+         sprite.position.z = 1
+         // スケールを調整
+         sprite.scale.set(0.5, 1.0, 0.5);
+       　scene.add(sprite);
+       　update();
+         
+        const sprite = new THREE.Sprite(material);
+         // ランダムな座標に配置
+         sprite.position.x = 1
+         sprite.position.y = 0 ;
+         sprite.position.z = 0
+         // スケールを調整
+         sprite.scale.set(0.5, 1.0, 0.5);
+       　scene.add(sprite);
+       　update();
+        
+        const sprite = new THREE.Sprite(material);
+         // ランダムな座標に配置
+         sprite.position.x = 0
+         sprite.position.y = 0 ;
+         sprite.position.z = 1
+         // スケールを調整
+         sprite.scale.set(0.5, 1.0, 0.5);
+       　scene.add(sprite);
+       　update();
+        
+        const sprite = new THREE.Sprite(material);
+         // ランダムな座標に配置
+         sprite.position.x = 2
+         sprite.position.y = 0 ;
+         sprite.position.z = 0
+         // スケールを調整
+         sprite.scale.set(0.5, 1.0, 0.5);
+       　scene.add(sprite);
+       　update();
+        
+        const sprite = new THREE.Sprite(material);
+         // ランダムな座標に配置
+         sprite.position.x = 0
+         sprite.position.y = 0 ;
+         sprite.position.z = 2
+         // スケールを調整
+         sprite.scale.set(0.5, 1.0, 0.5);
+       　scene.add(sprite);
+       　update();
+        
+        const sprite = new THREE.Sprite(material);
+         // ランダムな座標に配置
+         sprite.position.x = 1
+         sprite.position.y = 0 ;
+         sprite.position.z = 2
+         // スケールを調整
+         sprite.scale.set(0.5, 1.0, 0.5);
+       　scene.add(sprite);
+       　update();
+        
+        const sprite = new THREE.Sprite(material);
+         // ランダムな座標に配置
+         sprite.position.x = 2
+         sprite.position.y = 0 ;
+         sprite.position.z = 1
+         // スケールを調整
+         sprite.scale.set(0.5, 1.0, 0.5);
+       　scene.add(sprite);
+       　update();
+        
+        const sprite = new THREE.Sprite(material);
+         // ランダムな座標に配置
+         sprite.position.x = 3
+         sprite.position.y = 0 ;
+         sprite.position.z = 0
+         // スケールを調整
+         sprite.scale.set(0.5, 1.0, 0.5);
+       　scene.add(sprite);
+       　update();
+        
+        const sprite = new THREE.Sprite(material);
+         // ランダムな座標に配置
+         sprite.position.x = 0
+         sprite.position.y = 0 ;
+         sprite.position.z = 3
+         // スケールを調整
+         sprite.scale.set(0.5, 1.0, 0.5);
+       　scene.add(sprite);
+       　update();
+        
+        
         // 毎フレーム時に実行されるループイベントです
         function update() {
           // レンダリング
