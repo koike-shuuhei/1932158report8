@@ -50,7 +50,7 @@
         var texture1 = textureLoader1.load("zimen.jpg");
         var mat1 = new THREE.MeshPhongMaterial();
         mat1.map = texture1;
-         var planeGeometry = new THREE.PlaneGeometry(5,5,5,5);
+         var planeGeometry = new THREE.PlaneGeometry(5,10,5,10);
 
         var plane = new THREE.Mesh(planeGeometry,mat1);
         plane.rotation.set( -Math.PI/2, 0, 0 );
